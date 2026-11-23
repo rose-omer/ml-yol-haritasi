@@ -30,6 +30,19 @@ Toplam: haftada 10-12 saat ile yaklaşık 13-14 ay.
 
 Kısa yol (görüntü işleme önce): 3 → 4 → 5 → 8, sonra 6 → 7; Aşama 2 paralel yürür.
 
+## Aşama içinde nasıl ilerlenir
+
+Aşamalar sırayla yürür; her aşama farklı konu anlatır. Bir aşamanın kaynakları ise aynı konuyu farklı biçimde anlatır: tablo bir menüdür, hepsi okunmaz.
+
+1. Ana kaynağı bitir (her aşamada "Ana kaynak" satırı).
+2. "Okunacak makaleler"den 3-4 tanesini seç.
+3. Bir uygulama projesini yap.
+4. Yazıları yaz.
+5. Sonraki aşamaya geç; kalan kaynaklara dönme.
+
+- Başvuru kaynağı baştan sona okunmaz; yalnız takılınan konuda açılır.
+- Zorunlu sıra: 3 → 5 ve 3 → 6 → 7. Aşama 4 ve 8 araya girebilir.
+
 ## Bağlantı etiketleri
 
 Kaynak tablolarında her kaynağın bağlantıları etiketlidir:
@@ -69,6 +82,8 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 
 ## Aşama 1 — Matematik ve teori
 **Hedef:** Lineer cebir, olasılık ve optimizasyonu öğrenme kuramına bağlamak.
+
+**Ana kaynak:** Mathematics for Machine Learning (bölüm seçerek). **Başvuru:** The Matrix Cookbook, CS229 Lecture Notes.
 
 **Çalışma biçimi: gerektikçe.** Mühendislik temeli (vektör, matris, özdeğer, türev, temel olasılık) varsa bu aşamayı baştan sona yapma.
 
@@ -127,6 +142,10 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 ## Aşama 2 — Klasik ML derinlemesine
 **Hedef:** Tabular veride klasik modellerin kuramını, değerlendirmesini ve kalibrasyonunu uygulamaya bağlamak.
 
+**Ana kaynak:** CS229 Lecture Notes (bağlantısı Aşama 1 tablosunda). **Başvuru:** Probabilistic Machine Learning (Murphy), The Elements of Statistical Learning.
+
+**Tekrar planı (3 hafta):** 1) doğrusal modeller, düzenlileştirme, bias-variance; 2) ağaçlar ve gradient boosting, XGBoost makalesi; 3) değerlendirme, kalibrasyon, veri sızıntısı ve bir proje. Çekirdek yöntemleri, Gauss süreçleri ve grafik modeller sonraya kalır.
+
 ### Konular
 - Çekirdek yöntemleri: RKHS, çekirdek seçimi, destek vektör makineleri
 - Gauss süreçleri: posterior çıkarım ve belirsizlik tahmini
@@ -179,6 +198,8 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 ## Aşama 3 — Derin öğrenme çekirdeği
 
 **Hedef:** Derin öğrenme eğitimini sıfırdan kurmak, ölçmek ve ölçekte yeniden üretilebilir hâle getirmek.
+
+**Ana kaynak:** Neural Networks: Zero to Hero (kod yazarak). **Başvuru:** Understanding Deep Learning.
 
 ### Konular
 - Otomatik türev: hesap grafı, ileri ve geri mod, zincir kuralı, sayısal gradyan denetimi.
@@ -244,6 +265,8 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 
 **Hedef:** Kamera geometrisini, öznitelik eşlemeyi ve 3B yeniden yapılandırmayı kendi kamera verisinde uygulayabilmek.
 
+**Ana kaynak:** First Principles of Computer Vision. **Başvuru:** Computer Vision: Algorithms and Applications (Szeliski).
+
 ### Konular
 - Görüntü oluşumu ve delikli kamera modeli
 - Renk uzayları ve ISP hatları
@@ -303,6 +326,8 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 ## Aşama 5 — Modern bilgisayarlı görü
 
 **Hedef:** Güncel omurga, tespit, bölütleme, takip ve öz-denetimli modelleri seçip kendi veri setinde karşılaştırabilmek.
+
+**Ana kaynak:** CS231n, Stanford. **Başvuru:** Okunacak makaleler, Lil'Log.
 
 ### Konular
 - Omurgalar: ResNet, ConvNeXt, ViT, Swin
@@ -391,6 +416,8 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 
 **Hedef:** Difüzyon, akış eşleştirme ve 3B gösterimleri türeterek kodlayabilmek.
 
+**Ana kaynak:** MIT 6.S184: Introduction to Flow Matching and Diffusion Models. **Başvuru:** What are Diffusion Models? (Lilian Weng), Hugging Face Diffusers.
+
 ### Konular
 - VAE, GAN (kısa) ve normalizing flow
 - DDPM: ileri ve ters süreç, gürültü tahmini kaybı
@@ -456,6 +483,8 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 ## Aşama 7 — Transformer, LLM ve görü-dil modelleri
 
 **Hedef:** LLM ve görü-dil modellerini sıfırdan kodlayıp verimli çıkarım ve değerlendirme yapabilmek.
+
+**Ana kaynak:** CS336: Language Modeling from Scratch. **Başvuru:** Neural Networks: Zero to Hero, Hugging Face LLM Course.
 
 ### Konular
 - Dikkat ve transformer: sıfırdan kodlama
@@ -523,6 +552,8 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 
 ## Aşama 8 — Üretim, hız ve ML sistemleri
 **Hedef:** Eğitilmiş bir modeli gerçek zamanlı video hattında düşük gecikme ve düşük maliyetle çalıştırmak.
+
+**Ana kaynak:** MIT 6.5940 TinyML and Efficient AI Computing. **Başvuru:** araç dokümanları (TensorRT, ONNX Runtime, Triton, DeepStream).
 ### Konular
 - Nicemleme: PTQ, QAT, INT8 ve FP8 doğruluk kaybı.
 - Budama ve damıtma: yapısal budama, öğretmen-öğrenci kaybı.
@@ -586,6 +617,8 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 
 ## Aşama 9 — Araştırma becerisi ve teknik yazarlık
 **Hedef:** Makale okumayı, deney tasarımını ve yazılı anlatımı üretim seviyesinde yapmak.
+
+**Ana kaynak:** Keshav "How to Read a Paper" ve Schulman "An Opinionated Guide to ML Research". Bu aşama öbürleriyle birlikte, sürekli yürür.
 ### Konular
 - Makale okuma: Keshav'ın üç geçişli yöntemi.
 - Makale yeniden üretme: kod, veri ve hata ayıklama günlüğü.
