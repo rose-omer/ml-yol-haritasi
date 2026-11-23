@@ -14,7 +14,7 @@ Medium: <https://medium.com/@omersofware>
 
 | # | Aşama | Süre | Durum |
 |---|-------|------|-------|
-| 1 | Matematik ve teori | 6 hafta | ☐ |
+| 1 | Matematik ve teori | gerektikçe; toplam ~2 hafta | ☐ |
 | 2 | Klasik ML derinlemesine | 5 hafta | ☐ |
 | 3 | Derin öğrenme çekirdeği | 8 hafta | ☐ |
 | 4 | Görüntü işleme ve geometrik görü | 8 hafta | ☐ |
@@ -24,9 +24,27 @@ Medium: <https://medium.com/@omersofware>
 | 8 | Üretim, hız ve ML sistemleri | 8 hafta | ☐ |
 | 9 | Araştırma becerisi ve teknik yazarlık | sürekli | ☐ |
 
-Toplam: haftada 10-12 saat ile yaklaşık 14-15 ay.
+Toplam: haftada 10-12 saat ile yaklaşık 13-14 ay.
 
-Kısa yol (görüntü işleme önce): 3 → 4 → 5 → 8, sonra 6 → 7; Aşama 1-2 paralel yürür.
+**Başlangıç: Aşama 3.** Aşama 1 blok olarak çalışılmaz; bir formülde takılınca ilgili konuya dönülür.
+
+Kısa yol (görüntü işleme önce): 3 → 4 → 5 → 8, sonra 6 → 7; Aşama 2 paralel yürür.
+
+## Bağlantı etiketleri
+
+Kaynak tablolarında her kaynağın bağlantıları etiketlidir:
+
+| Etiket | Nereye gider |
+|--------|--------------|
+| Site | Kaynağın ana sayfası |
+| PDF | Kitabın ya da notun doğrudan PDF dosyası |
+| Web kitap | Kitabın tarayıcıda okunan sürümü (çeviri için en rahatı) |
+| Video listesi | Ders videolarının oynatma listesi |
+| Notlar | Ders notları ya da slaytlar |
+| Ödevler | Ödev ve çözüm sayfası |
+| Kod | GitHub deposu |
+
+"Ücretsiz" sütunu: Evet / Yalnız web (PDF yok) / Kısmen / Hayır.
 
 ## Haftalık düzen
 
@@ -52,6 +70,13 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 ## Aşama 1 — Matematik ve teori
 **Hedef:** Lineer cebir, olasılık ve optimizasyonu öğrenme kuramına bağlamak.
 
+**Çalışma biçimi: gerektikçe.** Mühendislik temeli (vektör, matris, özdeğer, türev, temel olasılık) varsa bu aşamayı baştan sona yapma.
+
+- Atla: temel lineer cebir ve analiz; Strang dizisinin tamamı; 3Blue1Brown.
+- Atlama: matris türevi, SVD'nin kullanımı (PCA, düşük rütbe, LoRA), Bayes çıkarımı ve en büyük olabilirlik, bilgi kuramı (entropi, çapraz entropi, KL), optimizasyon (SGD, kayıp yüzeyi).
+- Tek başvuru kitabı: Mathematics for Machine Learning; bölüm seçerek oku.
+- Sınama: bir doğrusal katmanın gradyanını kâğıtta çıkar; çapraz entropiyi en büyük olabilirlikten türet. İkisi rahat çıkıyorsa aşama tamam.
+
 ### Konular
 - Matris ayrışımları: SVD, özayrışım, düşük rütbe yaklaşımı
 - Sayısal lineer cebir: kayan nokta, koşul sayısı, en küçük kareler
@@ -63,19 +88,19 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 - Bilgi kuramı: entropi, KL sapması, karşılıklı bilgi
 
 ### Kaynaklar
-| Kaynak | Tür | Neden |
-|---|---|---|
-| [MIT 18.065: Matrix Methods in Data Analysis (Strang)](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/) | ders | SVD ve PCA'yı veri analizi bağlamında işler |
-| [Mathematics for Machine Learning (Deisenroth ve ark.)](https://mml-book.com) | kitap | ML için matematik temeli; yazarlar ücretsiz PDF sunar |
-| [EE364A: Convex Optimization I (Boyd)](https://web.stanford.edu/class/ee364a/index.html) | ders | Konveks optimizasyonun resmî Stanford ders sayfası |
-| [Convex Optimization (Boyd, Vandenberghe)](https://web.stanford.edu/~boyd/cvxbook/) | kitap | Konveks optimizasyonun standart referansı; PDF ücretsiz |
-| [Introduction to Applied Linear Algebra (Boyd, Vandenberghe)](https://web.stanford.edu/~boyd/vmls/) | kitap | En küçük kareler ve lineer modeller için sade anlatım |
-| [The Matrix Cookbook (Petersen, Pedersen)](https://www2.compute.dtu.dk/pubdb/pubs/3274-full.html) | referans | Matris türevleri ve özdeşlikleri için başvuru kaynağı |
-| [Information Theory, Inference, and Learning Algorithms (MacKay)](https://www.cambridge.org/0521642981) | kitap | Bilgi kuramı ve Bayes çıkarımı; ücretsiz sürüm doğrulanmadı |
-| [Probabilistic Machine Learning: An Introduction (Murphy)](https://probml.github.io/pml-book/book1.html) | kitap | Olasılıksal ML için kapsamlı, ücretsiz taslak PDF |
-| [CS229 Lecture Notes (Ng, Ma)](https://cs229.stanford.edu/main_notes.pdf) | ders | Kuramsal ML notları; kurs sayfası Stanford girişi ister |
-| [Understanding Machine Learning (Shalev-Shwartz, Ben-David)](https://www.cambridge.org/core/books/understanding-machine-learning/preface/78FF9A254F682A1E33037CE2D82B4270) | kitap | PAC öğrenme ve genelleme sınırları; ücretsiz sürüm doğrulanmadı |
-| [Essence of linear algebra (3Blue1Brown)](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) | video | Lineer cebir sezgisi; yalnız ön hazırlık için |
+| Kaynak | Tür | Bağlantılar | Ücretsiz | Neden |
+|---|---|---|---|---|
+| MIT 18.065: Matrix Methods in Data Analysis (Strang) | ders | [Site](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/) · [Video listesi](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/video_galleries/video-lectures/) · [Notlar](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/pages/readings/) · [Ödevler](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/pages/assignments/) | Evet | SVD ve PCA'yı veri analizi bağlamında işler |
+| Mathematics for Machine Learning (Deisenroth ve ark.) | kitap | [Site](https://mml-book.com) · [PDF](https://mml-book.com/book/mml-book.pdf) | Evet | ML için matematik temeli; yazarlar ücretsiz PDF sunar |
+| EE364A: Convex Optimization I (Boyd) | ders | [Site](https://web.stanford.edu/class/ee364a/index.html) · [Notlar](https://www.stanford.edu/~boyd/cvxbook/bv_cvxslides.pdf) | Kısmen | Konveks optimizasyonun resmî Stanford ders sayfası |
+| Convex Optimization (Boyd, Vandenberghe) | kitap | [Site](https://web.stanford.edu/~boyd/cvxbook/) · [PDF](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf) | Evet | Konveks optimizasyonun standart referansı; PDF ücretsiz |
+| Introduction to Applied Linear Algebra (Boyd, Vandenberghe) | kitap | [Site](https://web.stanford.edu/~boyd/vmls/) · [PDF](https://web.stanford.edu/~boyd/vmls/vmls.pdf) | Evet | En küçük kareler ve lineer modeller için sade anlatım |
+| The Matrix Cookbook (Petersen, Pedersen) | referans | [Site](https://www2.compute.dtu.dk/pubdb/pubs/3274-full.html) · [PDF](https://www2.compute.dtu.dk/pubdb/edoc/imm3274.pdf) | Evet | Matris türevleri ve özdeşlikleri için başvuru kaynağı |
+| Information Theory, Inference, and Learning Algorithms (MacKay) | kitap | [Site](https://www.cambridge.org/0521642981) | Kısmen | Bilgi kuramı ve Bayes çıkarımı; yazar ücretsiz PDF'i kendi sitesinde (inference.org.uk) verir, bağlantı doğrulanamadı |
+| Probabilistic Machine Learning: An Introduction (Murphy) | kitap | [Site](https://probml.github.io/pml-book/book1.html) · [PDF](https://github.com/probml/pml-book/releases/latest/download/book1.pdf) | Evet | Olasılıksal ML için kapsamlı, ücretsiz taslak PDF |
+| CS229 Lecture Notes (Ng, Ma) | ders | [Site](https://cs229.stanford.edu/) · [PDF](https://cs229.stanford.edu/main_notes.pdf) | Evet | Kuramsal ML notları; kurs sayfası Stanford girişi ister |
+| Understanding Machine Learning (Shalev-Shwartz, Ben-David) | kitap | [Site](https://www.cambridge.org/core/books/understanding-machine-learning/preface/78FF9A254F682A1E33037CE2D82B4270) · [PDF](https://cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf) | Evet | PAC öğrenme ve genelleme sınırları |
+| Essence of linear algebra (3Blue1Brown) | video | [Site](https://www.3blue1brown.com/) · [Video listesi](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) | Evet | Lineer cebir sezgisi; yalnız ön hazırlık için |
 
 ### Okunacak makaleler
 - [Reconciling Modern Machine Learning Practice and the Bias-Variance Trade-off (2019)](https://arxiv.org/abs/1812.11118) — double descent'in ilk ayrıntılı kuramsal açıklaması.
@@ -113,18 +138,18 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 - Tabular veride derin öğrenme karşılaştırması ve nedensellik girişi
 
 ### Kaynaklar
-| Kaynak | Tür | Neden |
-|---|---|---|
-| [Deep Learning: Foundations and Concepts (Bishop, Bishop)](https://link.springer.com/book/10.1007/978-3-031-45468-4) | kitap | Derin öğrenmenin kuramsal temeli; ücretli, kurum erişimi gerekebilir |
-| [Pattern Recognition and Machine Learning (Bishop)](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) | kitap | Olasılıksal modelleme ve çıkarımın klasik referansı; PDF |
-| [The Elements of Statistical Learning (Hastie, Tibshirani, Friedman)](https://hastie.su.domains/ElemStatLearn/) | kitap | Ağaç, boosting ve çekirdek yöntemlerinin istatistiksel çerçevesi |
-| [Gaussian Processes for Machine Learning (Rasmussen, Williams)](https://gaussianprocess.org/gpml/) | kitap | GP çıkarımı ve çekirdek seçimi için standart kaynak; PDF yazar sitesinde |
-| [XGBoost deposu (dmlc)](https://github.com/dmlc/xgboost) | repo | Eksik değer ve histogram bölme kodunu doğrudan incele |
-| [LightGBM deposu](https://github.com/lightgbm-org/LightGBM) | repo | GOSS ve EFB uygulamalarını C++ kodunda izle |
-| [CatBoost deposu](https://github.com/catboost/catboost) | repo | Sıralı hedef istatistiklerinin ve kategorik kodlamanın uygulaması |
-| [Tabular benchmark (Grinsztajn ve ark.)](https://github.com/LeoGrin/tabular-benchmark) | repo | Tabular veride ağaç ve derin modellerin deneysel karşılaştırması |
-| [Causal Inference: What If (Hernán, Robins)](https://miguelhernan.org/whatifbook) | kitap | Gözlemsel veride nedensel çıkarım; ücretsiz çevrim içi sürüm |
-| [Introduction to Causal Inference (Brady Neal)](https://www.bradyneal.com/causal-inference-course) | ders | Potansiyel sonuçlar ve nedensel grafikler için ücretsiz ders |
+| Kaynak | Tür | Bağlantılar | Ücretsiz | Neden |
+|---|---|---|---|---|
+| Deep Learning: Foundations and Concepts (Bishop, Bishop) | kitap | [Site](https://link.springer.com/book/10.1007/978-3-031-45468-4) · [Web kitap](https://www.bishopbook.com/) | Yalnız web | Derin öğrenmenin kuramsal temeli; basılı kitap ücretli, çevrimiçi okuma ücretsiz |
+| Pattern Recognition and Machine Learning (Bishop) | kitap | [Site](https://www.microsoft.com/en-us/research/people/cmbishop/) · [PDF](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) | Evet | Olasılıksal modelleme ve çıkarımın klasik referansı |
+| The Elements of Statistical Learning (Hastie, Tibshirani, Friedman) | kitap | [Site](https://hastie.su.domains/ElemStatLearn/) | Evet | Ağaç, boosting ve çekirdek yöntemlerinin istatistiksel çerçevesi; PDF bağlantısı sitede |
+| Gaussian Processes for Machine Learning (Rasmussen, Williams) | kitap | [Site](https://gaussianprocess.org/gpml/) · [PDF](https://gaussianprocess.org/gpml/chapters/RW.pdf) | Evet | GP çıkarımı ve çekirdek seçimi için standart kaynak |
+| XGBoost deposu (dmlc) | repo | [Site](https://xgboost.ai) · [Kod](https://github.com/dmlc/xgboost) | Evet | Eksik değer ve histogram bölme kodunu doğrudan incele |
+| LightGBM deposu | repo | [Site](https://lightgbm.readthedocs.io) · [Kod](https://github.com/lightgbm-org/LightGBM) | Evet | GOSS ve EFB uygulamalarını C++ kodunda izle |
+| CatBoost deposu | repo | [Site](https://github.com/catboost/catboost) | Evet | Sıralı hedef istatistiklerinin ve kategorik kodlamanın uygulaması |
+| Tabular benchmark (Grinsztajn ve ark.) | repo | [Site](https://github.com/LeoGrin/tabular-benchmark) | Evet | Tabular veride ağaç ve derin modellerin deneysel karşılaştırması |
+| Causal Inference: What If (Hernán, Robins) | kitap | [Site](https://miguelhernan.org/whatifbook) · [PDF](https://miguelhernan.org/s/hernanrobins_WhatIf_19aug26.pdf) | Evet | Gözlemsel veride nedensel çıkarım |
+| Introduction to Causal Inference (Brady Neal) | ders | [Site](https://www.bradyneal.com/causal-inference-course) · [PDF](https://www.bradyneal.com/Introduction_to_Causal_Inference-Dec17_2020-Neal.pdf) · [Video listesi](https://www.youtube.com/playlist?list=PLoazKTcS0Rzb6bb9L508cyJ1z-U9iWkA0) | Evet | Potansiyel sonuçlar ve nedensel grafikler için ücretsiz ders |
 
 ### Okunacak makaleler
 - [XGBoost: A Scalable Tree Boosting System (2016)](https://arxiv.org/abs/1603.02754) — seyrek veri yönetimi ve ağırlıklı kuantil eskizi.
@@ -168,22 +193,22 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 - AMP, DDP ve deney takibi: kayıp ölçekleme, çok GPU eşitleme, tohum ve yapılandırma kaydı.
 
 ### Kaynaklar
-| Kaynak | Tür | Neden |
-|---|---|---|
-| [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) | ders | Geri yayılımı ve GPT'yi sıfırdan kodlar. |
-| [micrograd](https://github.com/karpathy/micrograd) | repo | Skaler autograd motoru; ilk okunacak kod. |
-| [A Recipe for Training Neural Networks](http://karpathy.github.io/2019/04/25/recipe/) | blog | Hata ayıklama sırası ve eğitim kontrol listesi. |
-| [Understanding Deep Learning](https://udlbook.github.io/udlbook/) | kitap | Modern mimarileri ve eğitim pratiğini kapsayan güncel metin. |
-| [Deep Learning](https://www.deeplearningbook.org/) | kitap | Teorik temel; genelleme ve optimizasyon çerçevesi. |
-| [Dive into Deep Learning](https://d2l.ai/) | kitap | Kodlu ve etkileşimli; PyTorch sürümü mevcut. |
-| [CMU 10-414/714 Deep Learning Systems](https://dlsyscourse.org/) | ders | Otomatik türev motorunu sıfırdan kurdurur. |
-| [CMU 11-785 Introduction to Deep Learning](https://deeplearning.cs.cmu.edu/F25/index.html) | ders | Eğitim pratiği ve mimari; kayıt durumu doğrulanamadı. |
-| [MIT 6.7960 Deep Learning](https://deeplearning6-7960.github.io/) | ders | Eski 6.S898; teori ve uygulamayı birlikte verir. |
-| [NYU DS-GA 1008 Deep Learning](https://atcold.github.io/NYU-DLSP21/) | ders | LeCun ve Canziani; 2021 dönemi, enerji tabanlı bakış. |
-| [Deep Learning Tuning Playbook](https://github.com/google-research/tuning_playbook) | repo | Sistematik hiperparametre ayarı için adım adım reçete. |
-| [PyTorch internals](http://blog.ezyang.com/2019/05/pytorch-internals/) | blog | Tensör düzeni, dispatch ve autograd iç yapısı. |
-| [Getting Started with DDP](https://docs.pytorch.org/tutorials/intermediate/ddp_tutorial.html) | ders | Çok GPU eğitiminin resmî başlangıç noktası. |
-| [Introduction to torch.compile](https://docs.pytorch.org/tutorials/intermediate/torch_compile_tutorial.html) | ders | Derleme akışı ve grafik kırılmaları için resmî giriş. |
+| Kaynak | Tür | Bağlantılar | Ücretsiz | Neden |
+|---|---|---|---|---|
+| Neural Networks: Zero to Hero | ders | [Site](https://karpathy.ai/zero-to-hero.html) · [Video listesi](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) · [Kod](https://github.com/karpathy/nn-zero-to-hero) | Evet | Geri yayılımı ve GPT'yi sıfırdan kodlar. |
+| micrograd | repo | [Site](https://github.com/karpathy/micrograd) · [Kod](https://github.com/karpathy/micrograd) | Evet | Skaler autograd motoru; ilk okunacak kod. |
+| A Recipe for Training Neural Networks | blog | [Site](http://karpathy.github.io/2019/04/25/recipe/) | Evet | Hata ayıklama sırası ve eğitim kontrol listesi. |
+| Understanding Deep Learning | kitap | [Site](https://udlbook.github.io/udlbook/) | Evet | Modern mimarileri ve eğitim pratiğini kapsayan güncel metin; PDF bağlantısı sitede. |
+| Deep Learning | kitap | [Site](https://www.deeplearningbook.org/) · [Web kitap](https://www.deeplearningbook.org/) | Yalnız web | Teorik temel; genelleme ve optimizasyon çerçevesi. |
+| Dive into Deep Learning | kitap | [Site](https://d2l.ai/) · [PDF](https://d2l.ai/d2l-en.pdf) | Evet | Kodlu ve etkileşimli; PyTorch sürümü mevcut. |
+| CMU 10-414/714 Deep Learning Systems | ders | [Site](https://dlsyscourse.org/) · [Notlar](https://dlsyscourse.org/lectures) · [Ödevler](https://dlsyscourse.org/assignments) | Evet | Otomatik türev motorunu sıfırdan kurdurur. |
+| CMU 11-785 Introduction to Deep Learning | ders | [Site](https://deeplearning.cs.cmu.edu/F25/index.html) | Kısmen | Eğitim pratiği ve mimari; kayıt durumu doğrulanamadı. |
+| MIT 6.7960 Deep Learning | ders | [Site](https://deeplearning6-7960.github.io/) · [Video listesi](https://ocw.mit.edu/courses/6-7960-deep-learning-fall-2024/video_galleries/lecture-videos/) · [Ödevler](https://ocw.mit.edu/courses/6-7960-deep-learning-fall-2024/lists/homework/) | Evet | Eski 6.S898; teori ve uygulamayı birlikte verir. |
+| NYU DS-GA 1008 Deep Learning | ders | [Site](https://atcold.github.io/NYU-DLSP21/) · [Video listesi](https://atcold.github.io/NYU-DLSP21/) · [Kod](https://github.com/Atcold/NYU-DLSP21) | Evet | LeCun ve Canziani; 2021 dönemi, enerji tabanlı bakış. |
+| Deep Learning Tuning Playbook | repo | [Site](https://github.com/google-research/tuning_playbook) | Evet | Sistematik hiperparametre ayarı için adım adım reçete. |
+| PyTorch internals | blog | [Site](http://blog.ezyang.com/2019/05/pytorch-internals/) | Evet | Tensör düzeni, dispatch ve autograd iç yapısı. |
+| Getting Started with DDP | ders | [Site](https://docs.pytorch.org/tutorials/intermediate/ddp_tutorial.html) | Evet | Çok GPU eğitiminin resmî başlangıç noktası. |
+| Introduction to torch.compile | ders | [Site](https://docs.pytorch.org/tutorials/intermediate/torch_compile_tutorial.html) | Evet | Derleme akışı ve grafik kırılmaları için resmî giriş. |
 
 ### Okunacak makaleler
 - [Batch Normalization (2015)](https://arxiv.org/abs/1502.03167) — normalizasyonun temel referansı; iç kovaryans kayması iddiası tartışmalı.
@@ -234,18 +259,18 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 - OpenCV ile verimli uygulama: bellek, vektörleştirme, GPU
 
 ### Kaynaklar
-| Kaynak | Tür | Neden |
-|---|---|---|
-| [Computer Vision: Algorithms and Applications, 2. baskı](https://szeliski.org/Book/) | kitap | Kapsamlı referans; ücretsiz PDF, yalnız kişisel kullanım |
-| [Multiple View Geometry in Computer Vision](https://www.cambridge.org/core/books/multiple-view-geometry-in-computer-vision/0B6F289C78B2B23F596CAA76D3D43F7A) | kitap | Epipolar ve çok görüntü geometrisinin standart kaynağı; basılı |
-| [First Principles of Computer Vision](https://fpcv.cs.columbia.edu/) | video | Sezgisel ders serisi; kamera ve görüntü oluşumu |
-| [Foundations of Computer Vision](https://visionbook.mit.edu/) | kitap | Çevrim içi ücretsiz; modern öğrenme yaklaşımlarını da kapsar |
-| [Cyrill Stachniss, YouTube kanalı](https://www.youtube.com/@cyrillstachniss) | video | Fotogrametri ve SLAM anlatımları; oynatma listesini tek tek seç |
-| [16-385 Computer Vision, CMU](https://www.cs.cmu.edu/~16385/) | ders | Klasik geometri; sayfa 2020 bahar dönemine ait |
-| [Computer Vision, Tübingen (Geiger)](https://uni-tuebingen.de/pt/203146) | ders | 3B görü ve SfM; son sunum 2025 yazı, 2026'da verilmiyor |
-| [Digital Image Processing, 4. baskı (Gonzalez, Woods)](http://www.imageprocessingplace.com) | kitap | Filtreleme ve frekans alanı; destek sitesinde çözüm kılavuzu var |
-| [OpenCV](https://github.com/opencv/opencv) | repo | Resmî kütüphane; Apache-2.0; kod ve örnekler |
-| [COLMAP](https://colmap.github.io/) | repo | SfM ve çok görüntülü yoğun yeniden yapılandırma aracı |
+| Kaynak | Tür | Bağlantılar | Ücretsiz | Neden |
+|---|---|---|---|---|
+| Computer Vision: Algorithms and Applications, 2. baskı | kitap | [Site](https://szeliski.org/Book/) · [PDF](https://szeliski.org/Book/download.php) | Evet | Kapsamlı referans; PDF kısa bir formdan sonra iner, yalnız kişisel kullanım |
+| Multiple View Geometry in Computer Vision | kitap | [Site](https://www.cambridge.org/core/books/multiple-view-geometry-in-computer-vision/0B6F289C78B2B23F596CAA76D3D43F7A) | Hayır | Epipolar ve çok görüntü geometrisinin standart kaynağı; basılı |
+| First Principles of Computer Vision | video | [Site](https://fpcv.cs.columbia.edu/) · [Video listesi](https://www.youtube.com/channel/UCf0WB91t8Ky6AuYcQV0CcLw/featured) | Evet | Sezgisel ders serisi; kamera ve görüntü oluşumu |
+| Foundations of Computer Vision | kitap | [Site](https://visionbook.mit.edu/) · [Web kitap](https://visionbook.mit.edu/) · [Kod](https://github.com/Foundations-of-Computer-Vision/visionbook) | Yalnız web | Çevrim içi ücretsiz; modern öğrenme yaklaşımlarını da kapsar |
+| Cyrill Stachniss, YouTube kanalı | video | [Site](https://www.youtube.com/@cyrillstachniss) | Evet | Fotogrametri ve SLAM anlatımları; oynatma listesini tek tek seç |
+| 16-385 Computer Vision, CMU | ders | [Site](https://www.cs.cmu.edu/~16385/) · [Notlar](https://www.cs.cmu.edu/~16385/) · [Ödevler](https://www.cs.cmu.edu/~16385/) | Evet | Klasik geometri; sayfa 2020 bahar dönemine ait |
+| Computer Vision, Tübingen (Geiger) | ders | [Site](https://uni-tuebingen.de/pt/203146) · [Video listesi](https://www.youtube.com/playlist?list=PL05umP7R6ij35L2MHGzis8AEHz7mg381_) · [Notlar](https://drive.google.com/file/d/1J4jA3wAteiChtSAdGgd_2PaWklabBsek/view?usp=sharing) · [Ödevler](https://drive.google.com/drive/folders/17YkOlItn9PycNb5bT_O4nVlavlX0_VKQ?usp=sharing) | Evet | 3B görü ve SfM; son sunum 2025 yazı, 2026'da verilmiyor |
+| Digital Image Processing, 4. baskı (Gonzalez, Woods) | kitap | [Site](http://www.imageprocessingplace.com) | Kısmen | Filtreleme ve frekans alanı; destek sitesinde hata listesi ve görüntü veritabanı var |
+| OpenCV | repo | [Site](https://opencv.org) · [Kod](https://github.com/opencv/opencv) | Evet | Resmî kütüphane; Apache-2.0; kod ve örnekler |
+| COLMAP | repo | [Site](https://colmap.github.io/) · [Kod](https://github.com/colmap/colmap) | Evet | SfM ve çok görüntülü yoğun yeniden yapılandırma aracı |
 
 ### Okunacak makaleler
 - [SuperPoint: Self-Supervised Interest Point Detection and Description (2017)](https://arxiv.org/abs/1712.07629) — Öğrenilmiş öznitelik noktası ve tanımlayıcısının ilk ayrıntılı hâli.
@@ -294,20 +319,20 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 - Veri etiketleme ve aktif öğrenme
 
 ### Kaynaklar
-| Kaynak | Tür | Neden |
-|---|---|---|
-| [CS231n, Stanford (2026 bahar)](https://cs231n.stanford.edu/) | ders | Derin öğrenme tabanlı görü; güncel dönem |
-| [Community Computer Vision Course, Hugging Face](https://huggingface.co/learn/computer-vision-course) | ders | Uygulamalı Python kodu; ücret bilgisi sayfada yok |
-| [timm](https://github.com/huggingface/pytorch-image-models) | repo | Omurga modelleri; Apache-2.0 kod; ağırlık lisansı ayrıca kontrol edilmeli |
-| [Ultralytics YOLO](https://docs.ultralytics.com/) | repo | YOLO26 ve YOLO11 belgeleri; eğitim ve dışa aktarma |
-| [supervision, Roboflow](https://github.com/roboflow/supervision) | repo | Takip, işaretleme ve değerlendirme yardımcıları; MIT lisanslı |
-| [MMDetection](https://github.com/open-mmlab/mmdetection) | repo | Tespit çerçevesi; son sürüm 2024; bakım durumu kontrol edilmeli |
-| [Lil'Log, Lilian Weng](https://lilianweng.github.io/) | blog | Derin öğrenme konularında derin ve kısa özetler |
-| [Hugging Face Daily Papers](https://huggingface.co/papers) | blog | Yeni makaleleri topluluk oylarıyla takip etmek için |
-| [anomalib](https://github.com/open-edge-platform/anomalib) | repo | Anomali tespiti; PatchCore dahil; Apache-2.0 |
-| [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | repo | Çok dilli OCR; Apache-2.0; Türkçe model durumu kontrol edilmeli |
-| [Torchreid](https://github.com/KaiyangZhou/deep-person-reid) | repo | ReID referansı; son güncelleme 2022; bakım belirsiz |
-| [Computer Vision, Tübingen (Geiger)](https://uni-tuebingen.de/pt/203146) | ders | 11. ders öz-denetimli öğrenmeyi işler; 2026'da verilmiyor |
+| Kaynak | Tür | Bağlantılar | Ücretsiz | Neden |
+|---|---|---|---|---|
+| CS231n, Stanford (2026 bahar) | ders | [Site](https://cs231n.stanford.edu/) · [Notlar](https://cs231n.github.io/) | Evet | Derin öğrenme tabanlı görü; güncel dönem |
+| Community Computer Vision Course, Hugging Face | ders | [Site](https://huggingface.co/learn/computer-vision-course) · [Kod](https://github.com/huggingface/computer-vision-course) | Yalnız web | Uygulamalı Python kodu; ücret bilgisi sayfada yok |
+| timm | repo | [Site](https://huggingface.co/docs/timm) · [Kod](https://github.com/huggingface/pytorch-image-models) | Evet | Omurga modelleri; Apache-2.0 kod; bazı ağırlıklar CC-BY-NC |
+| Ultralytics YOLO | repo | [Site](https://docs.ultralytics.com/) · [Kod](https://github.com/ultralytics/ultralytics) | Evet | YOLO26 ve YOLO11 belgeleri; eğitim ve dışa aktarma |
+| supervision, Roboflow | repo | [Site](https://supervision.roboflow.com) · [Kod](https://github.com/roboflow/supervision) | Evet | Takip, işaretleme ve değerlendirme yardımcıları; MIT lisanslı |
+| MMDetection | repo | [Site](https://mmdetection.readthedocs.io/en/latest/) · [Kod](https://github.com/open-mmlab/mmdetection) | Evet | Tespit çerçevesi; v3.3.0 (2024) sürümü; depo etkin |
+| Lil'Log, Lilian Weng | blog | [Site](https://lilianweng.github.io/) | Evet | Derin öğrenme konularında derin ve kısa özetler |
+| Hugging Face Daily Papers | blog | [Site](https://huggingface.co/papers) | Evet | Yeni makaleleri topluluk oylarıyla takip etmek için |
+| anomalib | repo | [Site](https://anomalib.readthedocs.io/en/latest/) · [Kod](https://github.com/open-edge-platform/anomalib) | Evet | Anomali tespiti; PatchCore dahil; Apache-2.0 |
+| PaddleOCR | repo | [Site](https://www.paddleocr.com) · [Kod](https://github.com/PaddlePaddle/PaddleOCR) | Evet | Çok dilli OCR; Apache-2.0; Türkçe model durumu kontrol edilmeli |
+| Torchreid | repo | [Site](https://kaiyangzhou.github.io/deep-person-reid/) · [Kod](https://github.com/KaiyangZhou/deep-person-reid) | Evet | ReID referansı; son güncelleme 2022; bakım belirsiz |
+| Computer Vision, Tübingen (Geiger) | ders | [Site](https://uni-tuebingen.de/pt/203146) · [Video listesi](https://www.youtube.com/playlist?list=PL05umP7R6ij35L2MHGzis8AEHz7mg381_) · [Notlar](https://drive.google.com/file/d/1J4jA3wAteiChtSAdGgd_2PaWklabBsek/view?usp=sharing) · [Ödevler](https://drive.google.com/drive/folders/17YkOlItn9PycNb5bT_O4nVlavlX0_VKQ?usp=sharing) | Evet | 11. ders öz-denetimli öğrenmeyi işler; 2026'da verilmiyor |
 
 ### Okunacak makaleler
 #### Omurga
@@ -381,21 +406,21 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 - NeRF, 3D Gaussian Splatting ve ileri beslemeli 3B yeniden kurma
 
 ### Kaynaklar
-| Kaynak | Tür | Neden |
-|---|---|---|
-| [MIT 6.S184: Introduction to Flow Matching and Diffusion Models (2026)](https://diffusion.csail.mit.edu/2026/) | ders | Akış eşleştirmenin ilkeli türetimi; 2026 sürümü |
-| [Stanford CS236: Deep Generative Models](https://deepgenerativemodels.github.io/) | ders | VAE, akış ve difüzyon için olasılıksal temel |
-| [Berkeley CS294-158: Deep Unsupervised Learning (2020)](https://sites.google.com/view/berkeley-cs294-158-sp20/home) | ders | Otoregresif ve difüzyon modelleri; arşiv ders |
-| [What are Diffusion Models? (Lilian Weng)](https://lilianweng.github.io/posts/2021-07-11-diffusion-models) | blog | Difüzyonun matematiksel akışını adım adım anlatır |
-| [Generative Modeling by Estimating Gradients (Yang Song)](https://yang-song.net/blog/2021/score/) | blog | Skor tabanlı üretimin kaynağı |
-| [Hugging Face Diffusion Course](https://huggingface.co/learn/diffusion-course) | ders | Diffusers ile uygulamalı difüzyon; ücretsiz notebook'lar |
-| [Perspectives on diffusion (Sander Dieleman)](https://sander.ai/2023/07/20/perspectives.html) | blog | Difüzyon yaklaşımlarının kavramsal haritası |
-| [Understanding Diffusion Models: A Unified Perspective (Calvin Luo)](https://arxiv.org/abs/2208.11970) | ders | ELBO ve skor görüşlerini tek çatıda bağlar |
-| [MIT 6.S978: Deep Generative Models (Kaiming He)](https://mit-6s978.github.io/) | ders | VAE, GAN ve difüzyonu görüntü odaklı işler |
-| [nerfstudio](https://docs.nerf.studio/) | repo | NeRF eğitimi ve testi için modüler araç seti |
-| [gsplat](https://github.com/nerfstudio-project/gsplat) | repo | CUDA hızlandırmalı Gaussian rasterizasyon kütüphanesi |
-| [3D Gaussian Splatting (resmî sayfa)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) | repo | Özgün 3DGS yöntemi ve kodu |
-| [Hugging Face Diffusers](https://huggingface.co/docs/diffusers) | repo | Difüzyon boru hatları, ince ayar ve nicemleme |
+| Kaynak | Tür | Bağlantılar | Ücretsiz | Neden |
+|---|---|---|---|---|
+| MIT 6.S184: Introduction to Flow Matching and Diffusion Models (2026) | ders | [Site](https://diffusion.csail.mit.edu/2026/) · [Notlar](https://diffusion.csail.mit.edu/2026/docs/lecture_notes.pdf) | Evet | Akış eşleştirmenin ilkeli türetimi; 2026 sürümü |
+| Stanford CS236: Deep Generative Models | ders | [Site](https://deepgenerativemodels.github.io/) · [Notlar](https://deepgenerativemodels.github.io/notes/index.html) | Evet | VAE, akış ve difüzyon için olasılıksal temel |
+| Berkeley CS294-158: Deep Unsupervised Learning (2020) | ders | [Site](https://sites.google.com/view/berkeley-cs294-158-sp20/home) | Evet | Otoregresif ve difüzyon modelleri; arşiv ders |
+| What are Diffusion Models? (Lilian Weng) | blog | [Site](https://lilianweng.github.io/posts/2021-07-11-diffusion-models) | Evet | Difüzyonun matematiksel akışını adım adım anlatır |
+| Generative Modeling by Estimating Gradients (Yang Song) | blog | [Site](https://yang-song.net/blog/2021/score/) | Evet | Skor tabanlı üretimin kaynağı |
+| Hugging Face Diffusion Course | ders | [Site](https://huggingface.co/learn/diffusion-course) · [Kod](https://github.com/huggingface/diffusion-models-class) | Evet | Diffusers ile uygulamalı difüzyon; ücretsiz notebook'lar |
+| Perspectives on diffusion (Sander Dieleman) | blog | [Site](https://sander.ai/2023/07/20/perspectives.html) | Evet | Difüzyon yaklaşımlarının kavramsal haritası |
+| Understanding Diffusion Models: A Unified Perspective (Calvin Luo) | ders | [Site](https://arxiv.org/abs/2208.11970) | Evet | ELBO ve skor görüşlerini tek çatıda bağlar |
+| MIT 6.S978: Deep Generative Models (Kaiming He) | ders | [Site](https://mit-6s978.github.io/) · [Notlar](https://mit-6s978.github.io/schedule.html) | Evet | VAE, GAN ve difüzyonu görüntü odaklı işler |
+| nerfstudio | repo | [Site](https://docs.nerf.studio/) · [Kod](https://github.com/nerfstudio-project/nerfstudio) | Evet | NeRF eğitimi ve testi için modüler araç seti |
+| gsplat | repo | [Site](https://github.com/nerfstudio-project/gsplat) | Evet | CUDA hızlandırmalı Gaussian rasterizasyon kütüphanesi |
+| 3D Gaussian Splatting (resmî sayfa) | repo | [Site](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) · [Kod](https://github.com/graphdeco-inria/gaussian-splatting) | Evet | Özgün 3DGS yöntemi ve kodu |
+| Hugging Face Diffusers | repo | [Site](https://huggingface.co/docs/diffusers) · [Kod](https://github.com/huggingface/diffusers) | Evet | Difüzyon boru hatları, ince ayar ve nicemleme |
 
 ### Okunacak makaleler
 - [Auto-Encoding Variational Bayes (2013)](https://arxiv.org/abs/1312.6114) — Yeniden parametreleme hilesinin kaynağı.
@@ -447,22 +472,22 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 - VLM ile video anlama ve mekanistik yorumlanabilirlik girişi
 
 ### Kaynaklar
-| Kaynak | Tür | Neden |
-|---|---|---|
-| [CS336: Language Modeling from Scratch (Spring 2025)](https://cs336.stanford.edu/spring2025) | ders | Veri, ölçekleme, sistem ve hizalamayı sıfırdan kapsar |
-| [CS224N: NLP with Deep Learning (Winter 2026)](https://web.stanford.edu/class/cs224n/) | ders | Transformer temelleri ve NLP görevlerinin çerçevesi |
-| [CS25: Transformers United V6](https://web.stanford.edu/class/cs25/) | ders | Transformer araştırmasının güncel konuk konuşmaları |
-| [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) | video | GPT'yi koddan sıfırdan kurma ve tokenizer |
-| [nanochat](https://github.com/karpathy/nanochat) | repo | Küçük ChatGPT benzeri modeli uçtan uca eğitme |
-| [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | repo | Kitabın resmî kodu; GPT modelini adım adım yazma |
-| [The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer/) | blog | Orijinal makalenin satır satır PyTorch uygulaması |
-| [Hugging Face LLM Course](https://huggingface.co/learn/llm-course) | ders | Tokenizer, ince ayar ve akıl yürüten modeller |
-| [Hugging Face Agents Course](https://huggingface.co/learn/agents-course) | ders | Ajan çerçeveleri ve araç kullanımı uygulamalı |
-| [Advanced LLM Agents MOOC (Spring 2025)](https://llmagents-learning.org/sp25) | ders | Ajan değerlendirmesi ve araştırma odaklı konular |
-| [AI Engineering (Chip Huyen)](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) | kitap | Temel modelle uygulama, değerlendirme ve RAG pratikleri |
-| [Building effective agents (Anthropic)](https://www.anthropic.com/engineering/building-effective-agents) | blog | Ajan iş akışlarında basit tutma ilkeleri; 2024 |
-| [How To Become a Mechanistic Interpretability Researcher (Neel Nanda)](https://www.alignmentforum.org/posts/jP9KDyMkchuv6tHwm/how-to-become-a-mechanistic-interpretability-researcher) | blog | Mekanistik yorumlanabilirliğe aşamalı giriş yolu |
-| [Umar Jamil YouTube](https://www.youtube.com/@umarjamilai) | video | Transformer ve LLaMA bileşenlerini sıfırdan kodlayan videolar |
+| Kaynak | Tür | Bağlantılar | Ücretsiz | Neden |
+|---|---|---|---|---|
+| CS336: Language Modeling from Scratch (Spring 2025) | ders | [Site](https://cs336.stanford.edu/spring2025) | Evet | Veri, ölçekleme, sistem ve hizalamayı sıfırdan kapsar |
+| CS224N: NLP with Deep Learning (Winter 2026) | ders | [Site](https://web.stanford.edu/class/cs224n/) | Kısmen | Transformer temelleri ve NLP görevlerinin çerçevesi |
+| CS25: Transformers United V6 | ders | [Site](https://web.stanford.edu/class/cs25/) | Evet | Transformer araştırmasının güncel konuk konuşmaları |
+| Neural Networks: Zero to Hero | video | [Site](https://karpathy.ai/zero-to-hero.html) · [Video listesi](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) · [Kod](https://github.com/karpathy/nn-zero-to-hero) | Evet | GPT'yi koddan sıfırdan kurma ve tokenizer |
+| nanochat | repo | [Site](https://github.com/karpathy/nanochat) | Evet | Küçük ChatGPT benzeri modeli uçtan uca eğitme |
+| LLMs-from-scratch | repo | [Site](https://github.com/rasbt/LLMs-from-scratch) · [Video listesi](https://www.youtube.com/playlist?list=PLTKMiZHVd_2IIEsoJrWACkIxLRdfMlw11) | Evet | Kitabın resmî kodu; GPT modelini adım adım yazma |
+| The Annotated Transformer | blog | [Site](https://nlp.seas.harvard.edu/annotated-transformer/) · [Kod](https://github.com/harvardnlp/annotated-transformer) | Evet | Orijinal makalenin satır satır PyTorch uygulaması |
+| Hugging Face LLM Course | ders | [Site](https://huggingface.co/learn/llm-course) | Evet | Tokenizer, ince ayar ve akıl yürüten modeller |
+| Hugging Face Agents Course | ders | [Site](https://huggingface.co/learn/agents-course) | Evet | Ajan çerçeveleri ve araç kullanımı uygulamalı |
+| Advanced LLM Agents MOOC (Spring 2025) | ders | [Site](https://llmagents-learning.org/sp25) · [Video listesi](https://rdi.berkeley.edu/adv-llm-agents/sp25) | Evet | Ajan değerlendirmesi ve araştırma odaklı konular |
+| AI Engineering (Chip Huyen) | kitap | [Site](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) | Hayır | Temel modelle uygulama, değerlendirme ve RAG pratikleri |
+| Building effective agents (Anthropic) | blog | [Site](https://www.anthropic.com/engineering/building-effective-agents) | Evet | Ajan iş akışlarında basit tutma ilkeleri; 2024 |
+| How To Become a Mechanistic Interpretability Researcher (Neel Nanda) | blog | [Site](https://www.alignmentforum.org/posts/jP9KDyMkchuv6tHwm/how-to-become-a-mechanistic-interpretability-researcher) | Evet | Mekanistik yorumlanabilirliğe aşamalı giriş yolu |
+| Umar Jamil YouTube | video | [Site](https://www.youtube.com/@umarjamilai) | Evet | Transformer ve LLaMA bileşenlerini sıfırdan kodlayan videolar |
 
 ### Okunacak makaleler
 - [Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762) — Transformer'ın özgün mimarisi.
@@ -513,22 +538,22 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 - MLOps ve izleme: DVC, MLflow, CI, model kaydı, veri kayması, veri merkezli YZ, ML sistem tasarımı.
 
 ### Kaynaklar
-| Kaynak | Tür | Neden |
-|---|---|---|
-| [MIT 6.5940 TinyML and Efficient AI Computing](https://hanlab.mit.edu/course) | ders | Nicemleme ve budamanın kapsamlı anlatımı; Fall 2026 sürümü. |
-| [CMU 10-414 Deep Learning Systems](https://dlsyscourse.org) | ders | Derin öğrenme çatısının iç yapısı; Fall 2026 sürümü. |
-| [Full Stack Deep Learning](https://fullstackdeeplearning.com) | ders | Üretim ML uçtan uca; en son sürüm 2022. |
-| [Stanford CS329S](https://stanford-cs329s.github.io) | ders | ML sistem tasarımı; bulunan en son sürüm 2022. |
-| [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) | repo | Uygulamalı MLOps hattı; lisans belirtilmemiş. |
-| [MIT Introduction to Data-Centric AI](https://dcai.csail.mit.edu) | ders | Veri merkezli YZ; IAP 2024 sürümü. |
-| [Machine Learning Systems (Harvard)](https://mlsysbook.ai) | kitap | Üretim ML sistemleri; ücretsiz çevrim içi okuma. |
-| [Designing Machine Learning Systems](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/) | kitap | Tasarım kararları; yayın yılı 2022. |
-| [TensorRT dokümanı](https://docs.nvidia.com/deeplearning/tensorrt/latest/index.html) | doküman | NVIDIA çıkarım optimizasyonu; sürüm 11.5.0. |
-| [Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html) | doküman | Model sunumu ve dinamik batch ayarları. |
-| [DeepStream SDK Geliştirici Kılavuzu](https://docs.nvidia.com/metropolis/deepstream/dev-guide/index.html) | doküman | Video analitiği hattı; sürüm 9.2. |
-| [ONNX Runtime](https://onnxruntime.ai/docs/) | doküman | Çapraz platform çıkarım ve sağlayıcı seçimi. |
-| [PyTorch Performance Tuning Guide](https://docs.pytorch.org/tutorials/recipes/recipes/tuning_guide.html) | doküman | Eğitim ve çıkarım hız ayarları. |
-| [CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) | doküman | CUDA temelleri; sürüm 13.5. |
+| Kaynak | Tür | Bağlantılar | Ücretsiz | Neden |
+|---|---|---|---|---|
+| MIT 6.5940 TinyML and Efficient AI Computing | ders | [Site](https://hanlab.mit.edu/course) · [Video listesi](https://www.youtube.com/playlist?list=PL80kAHvQbh-qGtNc54A6KW4i4bkTPjiRF) | Evet | Nicemleme ve budamanın kapsamlı anlatımı; Fall 2026 sürümü. |
+| CMU 10-414 Deep Learning Systems | ders | [Site](https://dlsyscourse.org) · [Notlar](https://dlsyscourse.org/lectures/) · [Ödevler](https://dlsyscourse.org/assignments/) | Evet | Derin öğrenme çatısının iç yapısı; Fall 2026 sürümü. |
+| Full Stack Deep Learning | ders | [Site](https://fullstackdeeplearning.com) · [Video listesi](https://youtube.com/playlist?list=PL1T8fO7ArWleMMI8KPJ_5D5XSlovTW_Ur) | Evet | Üretim ML uçtan uca; en son sürüm 2022. |
+| Stanford CS329S | ders | [Site](https://stanford-cs329s.github.io) · [Notlar](https://stanford-cs329s.github.io/syllabus.html) | Evet | ML sistem tasarımı; bulunan en son sürüm 2022. |
+| MLOps Zoomcamp | repo | [Site](https://datatalks.club/blog/mlops-zoomcamp.html) · [Video listesi](https://www.youtube.com/playlist?list=PL3MmuxUbc_hIUISrluw_A7wDSmfOhErJK) · [Kod](https://github.com/DataTalksClub/mlops-zoomcamp) | Evet | Uygulamalı MLOps hattı. |
+| MIT Introduction to Data-Centric AI | ders | [Site](https://dcai.csail.mit.edu) · [Notlar](https://dcai.csail.mit.edu/2024) · [Video listesi](https://www.youtube.com/playlist?list=PL_1TbuIu65A8NTNuLutFoD87vbMl8GL8K) | Evet | Veri merkezli YZ; IAP 2024 sürümü. |
+| Machine Learning Systems (Harvard) | kitap | [Site](https://mlsysbook.ai) · [Web kitap](https://mlsysbook.ai/vol1/) | Yalnız web | Üretim ML sistemleri; ücretsiz çevrim içi okuma. |
+| Designing Machine Learning Systems | kitap | [Site](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/) | Hayır | Tasarım kararları; yayın yılı 2022. |
+| TensorRT dokümanı | doküman | [Site](https://docs.nvidia.com/deeplearning/tensorrt/latest/index.html) | Yalnız web | NVIDIA çıkarım optimizasyonu; sürüm 11.5.0. |
+| Triton Inference Server | doküman | [Site](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html) | Yalnız web | Model sunumu ve dinamik batch ayarları. |
+| DeepStream SDK Geliştirici Kılavuzu | doküman | [Site](https://docs.nvidia.com/metropolis/deepstream/dev-guide/index.html) | Yalnız web | Video analitiği hattı; sürüm 9.2. |
+| ONNX Runtime | doküman | [Site](https://onnxruntime.ai/docs/) | Yalnız web | Çapraz platform çıkarım ve sağlayıcı seçimi. |
+| PyTorch Performance Tuning Guide | doküman | [Site](https://docs.pytorch.org/tutorials/recipes/recipes/tuning_guide.html) | Yalnız web | Eğitim ve çıkarım hız ayarları. |
+| CUDA C++ Programming Guide | doküman | [Site](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) · [PDF](https://docs.nvidia.com/cuda/cuda-programming-guide/pdf/cuda-programming-guide.pdf) | Evet | CUDA temelleri; sürüm 13.5. |
 
 ### Okunacak makaleler
 - [Deep Compression (2015)](https://arxiv.org/abs/1510.00149) — budama, nicemleme ve Huffman birlikte.
@@ -574,22 +599,22 @@ Bir konuyu "bildim" saymak için dördü de gerekir:
 - Araştırma yönü: Hamming, Schulman ve Karpathy yazıları.
 
 ### Kaynaklar
-| Kaynak | Tür | Neden |
-|---|---|---|
-| [Keshav "How to Read a Paper" (2007)](https://www.cs.princeton.edu/courses/archive/fall18/cos561/papers/HowToRead05.pdf) | doküman | Üç geçişli makale okuma yöntemi. |
-| [Karpathy "A Survival Guide to a PhD"](https://karpathy.github.io/2016/09/07/phd/) | blog | PhD'de öncelik ve verimlilik. |
-| [Hamming "You and Your Research"](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) | doküman | Büyük problem seçme ve düşünme alışkanlığı. |
-| [Schulman "An Opinionated Guide to ML Research"](https://joschu.net/blog/opinionated-guide-ml-research.html) | blog | Hedef odaklı araştırma ve günlük tutma. |
-| [Rachel Thomas: blog yazma tavsiyesi (2017)](https://rachel.fast.ai/posts/2017-07-28-you-should-blog/) | blog | Yazmanın zamandan nasıl kazandırdığı. |
-| [Distill](https://distill.pub) | blog | Görsel anlatım örnekleri; 2021'den beri yeni yazı yok. |
-| [Ahead of AI](https://magazine.sebastianraschka.com) | blog | Sebastian Raschka; araştırma ve model analizleri. |
-| [The Batch](https://www.deeplearning.ai/the-batch/) | blog | Haftalık sektör özeti; DeepLearning.AI. |
-| [Import AI](https://jack-clark.net) | blog | Jack Clark; araştırma ve politika bülteni. |
-| [Yannic Kilcher](https://www.youtube.com/@YannicKilcher) | video | Makale okuma videoları; uzun anlatım. |
-| [Hugging Face Daily Papers](https://huggingface.co/papers) | doküman | Papers with Code yerine güncel makale takibi. |
-| [alphaXiv](https://www.alphaxiv.org) | doküman | arXiv makalelerine kısa özet ve tartışma. |
-| [Manim Community](https://www.manim.community) | repo | Matematiksel animasyon üretimi. |
-| [Gwern.net](https://gwern.net) | blog | Uzun deneme yazımı ve araştırma notları. |
+| Kaynak | Tür | Bağlantılar | Ücretsiz | Neden |
+|---|---|---|---|---|
+| Keshav "How to Read a Paper" (2007) | doküman | [Site](https://dl.acm.org/doi/10.1145/1273445.1273458) · [PDF](https://www.cs.princeton.edu/courses/archive/fall18/cos561/papers/HowToRead05.pdf) | Evet | Üç geçişli makale okuma yöntemi. |
+| Karpathy "A Survival Guide to a PhD" | blog | [Site](https://karpathy.github.io/2016/09/07/phd/) | Yalnız web | PhD'de öncelik ve verimlilik. |
+| Hamming "You and Your Research" | doküman | [Site](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) | Yalnız web | Büyük problem seçme ve düşünme alışkanlığı. |
+| Schulman "An Opinionated Guide to ML Research" | blog | [Site](https://joschu.net/blog/opinionated-guide-ml-research.html) | Yalnız web | Hedef odaklı araştırma ve günlük tutma. |
+| Rachel Thomas: blog yazma tavsiyesi (2017) | blog | [Site](https://rachel.fast.ai/posts/2017-07-28-you-should-blog/) | Yalnız web | Yazmanın zamandan nasıl kazandırdığı. |
+| Distill | blog | [Site](https://distill.pub) | Yalnız web | Görsel anlatım örnekleri; 2021'den beri yeni yazı yok. |
+| Ahead of AI | blog | [Site](https://magazine.sebastianraschka.com) | Yalnız web | Sebastian Raschka; araştırma ve model analizleri. |
+| The Batch | blog | [Site](https://www.deeplearning.ai/the-batch/) | Yalnız web | Haftalık sektör özeti; DeepLearning.AI. |
+| Import AI | blog | [Site](https://jack-clark.net) | Yalnız web | Jack Clark; araştırma ve politika bülteni. |
+| Yannic Kilcher | video | [Site](https://www.youtube.com/@YannicKilcher) | Evet | Makale okuma videoları; uzun anlatım. |
+| Hugging Face Daily Papers | doküman | [Site](https://huggingface.co/papers) | Yalnız web | Papers with Code yerine güncel makale takibi. |
+| alphaXiv | doküman | [Site](https://www.alphaxiv.org) | Yalnız web | arXiv makalelerine kısa özet ve tartışma. |
+| Manim Community | repo | [Site](https://www.manim.community) | Evet | Matematiksel animasyon üretimi. |
+| Gwern.net | blog | [Site](https://gwern.net) | Yalnız web | Uzun deneme yazımı ve araştırma notları. |
 
 ### Okunacak makaleler
 - [How to Read a Paper (2007)](https://www.cs.princeton.edu/courses/archive/fall18/cos561/papers/HowToRead05.pdf) — üç geçişli okuma sırası.
