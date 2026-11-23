@@ -59,6 +59,60 @@ Kaynak tablolarında her kaynağın bağlantıları etiketlidir:
 
 "Ücretsiz" sütunu: Evet / Yalnız web (PDF yok) / Kısmen / Hayır.
 
+## Çalışma yöntemi
+
+Temel kural: az kaynak, çok üretim. Zamanın üçte biri okuma ve izleme, üçte ikisi kod ve yazı. Kaynağı kapatıp kendin yazabiliyorsan öğrendin.
+
+### Bir konu için döngü (1 hafta)
+
+1. İzle ya da oku: ana kaynaktan tek bölüm. Durdur, not al.
+2. Kapat ve yaz: kaynağa bakmadan kodu kendin yaz. Takılınca bak, sonra yine kapat.
+3. Boz ve ölç: bir şeyi değiştir (öğrenme oranı, katman, veri). Sonucu tabloya yaz.
+4. Anlat: Medium yazısı. Anlatamadığın yer, anlamadığın yerdir; oraya geri dön.
+
+### Günlük oturum (1,5-2 saat)
+
+- İlk 10 dakika: dünkü konuyu kâğıda ezberden yaz.
+- 60-80 dakika: tek iş. Telefon ve sekmeler kapalı.
+- Son 10 dakika: üç satır not. Ne öğrendim, nerede takıldım, yarın ne yapacağım.
+
+### Not tutma
+
+- Her konuya tek sayfa: fikir, formül, kod parçası, takıldığım yer.
+- Terimi İngilizce yaz, Türkçesini yanına ekle. Kendi terim sözlüğünü tut.
+- Bu notlar yazının taslağıdır.
+
+### Takılınca
+
+- 30 dakika kendin uğraş.
+- Çözülmezse ikinci kaynağı aç ya da yapay zekâ asistanına sor.
+- Asistana cevabı değil, açıklamayı sor. Kodu ona yazdırma; kendi kodunu ona denetlet.
+
+### İngilizce kaynakla çalışma
+
+- Videoyu İngilizce sesle, Türkçe altyazıyla izle.
+- Makaleyi PDF yerine HTML sürümünden oku: arXiv adresinde `abs` yerine `html` yaz. Tarayıcı çevirisi HTML'de formülü bozmaz.
+- Önce özet, şekiller ve sonuç bölümü; yalnız anlamadığın paragrafı çevir.
+- Kitapta "Web kitap" bağlantısını seç; tarayıcı çevirisiyle okunur.
+- Yalnız PDF varsa bölümü asistana ver: "Türkçe açıkla, terimleri İngilizce bırak, formülleri değiştirme."
+
+### Kaçınılacaklar
+
+- Aynı konuda üçüncü kaynağı açmak.
+- Kodu kopyalayıp çalıştırmak ve geçmek.
+- Yazıyı "mükemmel olunca" yayımlamak. Haftada bir, olduğu kadar yayımla.
+- Bir haftayı kaçırınca planı bırakmak. Kaldığın yerden devam et.
+
+### İlk hafta
+
+| Gün | İş |
+|-----|----|
+| Pzt-Sal | Zero to Hero, ilk video (micrograd) |
+| Çar | Videoyu kapat; otomatik türevi sıfırdan yaz |
+| Per-Cum | Küçük bir ağı kendi kodunla eğit; kayıp eğrisini çiz |
+| Cmt | Yazı taslağı: "Geri Yayılımı Sıfırdan Yazmak" |
+| Paz | Yayımla; ilerleme tablosuna ekle |
+
 ## Haftalık düzen
 
 | Gün | İş | Süre |
