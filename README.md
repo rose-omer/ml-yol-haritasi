@@ -1,7 +1,7 @@
 # Makine Öğrenmesi, Yapay Zekâ ve Görüntü İşleme — İleri Düzey Yol Haritası
 
 Hedef: 3 yıllık deneyimin üstüne uzmanlık kurmak ve öğrenilen her konuyu Medium'da yayımlamak.
-Medium: <https://medium.com/@koseomer332>
+Medium: <https://medium.com/@omersofware>
 
 ## Nasıl kullanılır
 
